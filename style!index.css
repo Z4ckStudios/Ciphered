@@ -1,0 +1,41 @@
+body {
+    background: #000000;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+.square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%), rotate(0deg);
+    margin-top: -8.5%;
+    margin-left: -8.5%;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid white;
+
+    transition: all;
+    transition-duration: 0.5s;
+    animation: SpinAnim infinite;
+    animation-duration: 2.5s;
+}
+@keyframes SpinAnim {
+    0%{rotate: 0deg;}
+    25%{rotate: 180deg;}
+    50%{rotate: 180deg;}
+    75%{rotate: 360deg;}
+    100%{rotate: 360deg;}
+}
+.GmtlivihZS {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    margin-bottom: 50px;
+    transform: translate(-50%);
+    font-size: 24px;
+    font-family: "Courier New";
+    color: white;
+}

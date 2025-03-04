@@ -1,0 +1,99 @@
+body {
+    background: black;
+    color: white;
+    font-family: "Courier New";
+    user-select: none;
+    overflow: hidden;
+}
+.encode_decode {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 25px;
+    width: 50%;
+    height: 50%;
+}
+.ecodebox {
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    transform: translate(-50%);
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0px;
+    width: 90%;
+    height: 15%;
+    outline: none;
+    overflow-y: scroll;
+}
+.dcodebox {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-bottom: 30px;
+    transform: translate(-50%);
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0px;
+    width: 90%;
+    height: 15%;
+    outline: none;
+    overflow-y: scroll;
+}
+.ecodebutton {
+    position: absolute;
+    left: 50%;
+    margin-top: 80px;
+    transform: translate(-50%);
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 20%;
+    height: 15%;
+    text-align: center;
+    align-content: center;
+}
+::-webkit-scrollbar {
+    background: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: default;
+}
+::-webkit-scrollbar-thumb {
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.parasized{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-bottom: 25px;
+    transform: translate(-50%);
+    font-size: 14px;
+    list-style: none;
+    text-wrap: wrap;
+    width: 90%;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .ecodebutton {
+        width: 50%;
+        margin-top: 70px;
+    }
+    .encode_decode {
+        height: 30%;
+        width: 80%;
+    }
+}
+@media only screen and (max-height: 500px) {
+    .ecodebutton {
+        margin-top: 50px;
+        width: 25%;
+    }
+    .parasized {
+        margin-bottom: 15px;
+    }
+}
