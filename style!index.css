@@ -39,3 +39,24 @@ body {
     font-family: "Courier New";
     color: white;
 }
+@media only screen and (max-width: 600px) {
+    .square {
+        margin-top: -25%;
+        margin-left: -25%;
+    }
+    .GmtlivihZS {
+        width: 100%;
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-height: 500px) {
+    .square {
+        margin-top: -10%;
+        margin-left: -10%;
+        width: 100px;
+        height: 100px;
+    }
+    .GmtlivihZS {
+        margin-left:  -4%;
+    }
+}

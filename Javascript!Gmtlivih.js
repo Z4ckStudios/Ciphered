@@ -1,11 +1,11 @@
 var url = "https://Z4ckStudios.github.io/Ciphered/Gmtlivih";
-window.history.replaceState(null, document.title, url);
+// window.history.replaceState(null, document.title, url);
 
 var PageLoaded = localStorage.getItem("PageLoaded");
 localStorage.setItem("PageLoaded", "true");
 
-// if(PageLoaded == "true")
-// location.replace("index.html")
+if(PageLoaded == "true")
+location.replace("index.html")
 
 var ecodebox = document.querySelector(".ecodebox");
 var dcodebox = document.querySelector(".dcodebox");

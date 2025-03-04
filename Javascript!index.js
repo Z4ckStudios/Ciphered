@@ -1,5 +1,5 @@
 var url = "https://Z4ckStudios.github.io/Ciphered/";
-window.history.replaceState(null, document.title, url);
+// window.history.replaceState(null, document.title, url);
 
 var CurrentPos = localStorage.getItem("CurrentPos");
 localStorage.setItem("PageLoaded", "false");
