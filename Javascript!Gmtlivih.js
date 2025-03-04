@@ -1,5 +1,5 @@
 var url = "https://Z4ckStudios.github.io/Ciphered/Gmtlivih";
-// window.history.replaceState(null, document.title, url);
+window.history.replaceState(null, document.title, url);
 
 var PageLoaded = localStorage.getItem("PageLoaded");
 localStorage.setItem("PageLoaded", "true");
