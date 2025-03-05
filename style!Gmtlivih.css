@@ -15,6 +15,7 @@ body {
     padding: 25px;
     width: 50%;
     height: 50%;
+    background: black;
 }
 .ecodebox {
     position: absolute;
@@ -66,7 +67,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
 }
-.parasized{
+.parasized {
     position: absolute;
     bottom: 0px;
     left: 50%;
@@ -78,6 +79,42 @@ body {
     width: 90%;
     text-align: center;
 }
+.Tabs {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 8px;
+    text-align: center;
+    display: none;
+}
+.TabRGB {
+    position: absolute;
+    margin-top: 85px;
+    margin-left: -320px;
+    color: black;
+    background: white;
+    border: 2px solid white;
+    width: 70px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.TabCaesar {
+    position: absolute;
+    margin-top: 95px;
+    margin-left: -230px;
+    color: white;
+    background: black;
+    border: 2px solid white;
+    width: 70px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.portraitIndicator {
+    display: none;
+}
 @media only screen and (max-width: 600px) {
     .ecodebutton {
         width: 50%;
@@ -87,6 +124,17 @@ body {
         height: 30%;
         width: 80%;
     }
+    .TabRGB {
+        margin-top: 195px;
+        margin-left: -170px;
+    }
+    .TabCaesar {
+        margin-top: 205px;
+        margin-left: -80px;
+    }
+    .portraitIndicator {
+        display: inline;
+    }
 }
 @media only screen and (max-height: 500px) {
     .ecodebutton {
@@ -95,5 +143,16 @@ body {
     }
     .parasized {
         margin-bottom: 15px;
+    }
+    .TabRGB {
+        margin-top: 15px;
+        margin-left: -210px;
+    }
+    .TabCaesar {
+        margin-top: 25px;
+        margin-left: -120px;
+    }
+    .portraitIndicator {
+        display: none;
     }
 }

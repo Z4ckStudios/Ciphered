@@ -7,9 +7,14 @@ localStorage.setItem("PageLoaded", "true");
 if(PageLoaded == "true")
 location.replace("index.html")
 
+var portraitIndicator = document.querySelector(".portraitIndicator");
+
 var ecodebox = document.querySelector(".ecodebox");
 var dcodebox = document.querySelector(".dcodebox");
 var ecodebutton = document.querySelector(".ecodebutton");
+
+var TabRGB = document.querySelector(".TabRGB");
+var TabCaesar = document.querySelector(".TabCaesar");
 
 ecodebutton.addEventListener("click",
 function(e) {
@@ -82,6 +87,8 @@ function(e) {
         ".": "rgb(229, 229, 229)" + " ",
         ",": "rgb(0, 0, 0)" + " ",
 
+        ">": "",
+        "<": "",
         " ": "",
         ":": "",
         ";": "",
@@ -92,13 +99,34 @@ function(e) {
         "{": "",
         "}": "",
         "!": "",
+        "?": "",
+        "@": "",
+        "#": "",
+        "$": "",
+        "%": "",
+        "^": "",
+        "&": "",
+        "*": "",
+        "|": "",
+        "/": "",
+        "~": "",
+        "`": "",
+        "-": "",
+        "+": "",
+        "_": "",
+        "=": "",
+        "'": "",
+        '"': "",
     };
 
     var input = ecodebox.innerHTML;
     var repECODE = input.replace
-    (/a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|0|1|2|3|4|5|6|7|8|9|.|,|!/gi,
+    (/a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|0|1|2|3|4|5|6|7|8|9|.|,/gi,
     function (match) {return list[match];})
     dcodebox.innerHTML = repECODE;
+
+    if(ecodebox.innerHTML == "<br>")
+    {dcodebox.innerHTML = "";}
 })
 ecodebutton.addEventListener("mouseover",
 function() {
@@ -112,4 +140,27 @@ function() {
 
     ecodebutton.style.background = "#000000";
     ecodebutton.style.color = "#ffffff";
+})
+
+TabCaesar.addEventListener("click",
+function() {
+
+    
+})
+TabCaesar.addEventListener("mouseover",
+function() {
+
+    if(TabCaesar.style.background == "white")
+    {return;}
+    else
+    if(portraitIndicator == "")
+    {TabCaesar.style.background = "white";
+    TabCaesar.style.color = "black";
+    TabCaesar.style.cursor = "pointer";}
+})
+TabCaesar.addEventListener("mouseout",
+function() {
+
+    TabCaesar.style.background = "black";
+    TabCaesar.style.color = "white";
 })
