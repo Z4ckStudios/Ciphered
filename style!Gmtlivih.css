@@ -48,6 +48,20 @@ body {
     position: absolute;
     left: 50%;
     margin-top: 80px;
+    margin-left: -75px;
+    transform: translate(-50%);
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 20%;
+    height: 15%;
+    text-align: center;
+    align-content: center;
+}
+.dcodebutton {
+    position: absolute;
+    left: 50%;
+    margin-top: 80px;
+    margin-left: 75px;
     transform: translate(-50%);
     border: 2px solid white;
     border-radius: 5px;
