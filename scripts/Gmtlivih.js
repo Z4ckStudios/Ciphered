@@ -1,6 +1,10 @@
 import { encodeList, decodeList } from "./lists.js";
 
 var url = "../Gmtlivih";
+
+if(document.baseURI == "https://z4ckstudios.github.io/Ciphered/Gmtlivih.html") {
+    url = "../Ciphered/Gmtlivih";
+}
 window.history.replaceState(null, document.title, url);
 
 var PageLoaded = localStorage.getItem("PageLoaded");

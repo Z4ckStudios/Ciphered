@@ -1,4 +1,8 @@
 var url = "../";
+
+if(document.baseURI == "https://z4ckstudios.github.io/Ciphered/") {
+    url = "../Ciphered/";
+}
 window.history.replaceState(null, document.title, url);
 
 var CurrentPos = localStorage.getItem("CurrentPos");
