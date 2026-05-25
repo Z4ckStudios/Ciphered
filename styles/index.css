@@ -15,7 +15,7 @@ body {
 }
 #square {
     position: relative;
-    height: 30vh;
+    height: 14vw;
     width: 14vw;
     border-radius: 10px;
     border: 2px solid white;
