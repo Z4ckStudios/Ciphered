@@ -11,7 +11,7 @@ var PageLoaded = localStorage.getItem("PageLoaded");
 localStorage.setItem("PageLoaded", "true");
 
 if(PageLoaded == "true")
-location.replace("index.html")
+location.replace("../index.html")
 
 var portraitIndicator = document.getElementById("portraitIndicator");
 
