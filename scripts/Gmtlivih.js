@@ -1,8 +1,9 @@
 import { encodeList, decodeList } from "./lists.js";
 
 var url = "../Gmtlivih";
+var baseURI = "https://z4ckstudios.github.io/Ciphered/Gmtlivih.html";
 
-if(document.baseURI == "https://z4ckstudios.github.io/Ciphered/Gmtlivih.html") {
+if(document.baseURI == baseURI) {
     url = "../Ciphered/Gmtlivih";
 }
 window.history.replaceState(null, document.title, url);
@@ -10,8 +11,13 @@ window.history.replaceState(null, document.title, url);
 var PageLoaded = localStorage.getItem("PageLoaded");
 localStorage.setItem("PageLoaded", "true");
 
-if(PageLoaded == "true")
-location.replace("../index.html")
+if(PageLoaded == "true") {
+    if(document.baseURI !== baseURI) {
+        location.replace("index.html")
+    } else {
+        location.replace("../Ciphered/index.html");
+    }
+}
 
 var portraitIndicator = document.getElementById("portraitIndicator");
 
