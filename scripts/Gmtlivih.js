@@ -12,10 +12,10 @@ var PageLoaded = localStorage.getItem("PageLoaded");
 localStorage.setItem("PageLoaded", "true");
 
 if(PageLoaded == "true") {
-    if(document.baseURI !== baseURI) {
-        location.replace("index.html")
+    if(document.baseURI == baseURI) {
+        location.replace("../Ciphered/");
     } else {
-        location.replace("../Ciphered/index.html");
+        location.replace("../")
     }
 }
 
