@@ -12,9 +12,9 @@ localStorage.setItem("PageLoaded", "true");
 
 if(PageLoaded == "true") {
     if(document.baseURI == "http://127.0.0.1:5500/Gmtlivih") {
-        location.replace("../")
+        location.replace("../");
     } else {
-        location.replace("../Ciphered/")
+        location.replace("../Ciphered/");
     }
 }
 
