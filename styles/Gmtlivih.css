@@ -1,0 +1,102 @@
+body {
+    background: #000000;
+    color: #ffffff;
+    font-family: "Courier New";
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+#encode_decode {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    width: 50vw;
+    height: 50vh;
+    background: black;
+}
+#ecodebox {
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    transform: translate(-50%);
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    width: 49vw;
+    height: 20.75vh;
+    outline: none;
+    overflow-y: scroll;
+}
+#dcodebox {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-bottom: 30px;
+    transform: translate(-50%);
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    width: 49vw;
+    height: 20.75vh;
+    outline: none;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    background: black;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    cursor: default;
+}
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#parasized {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-bottom: 25px;
+    transform: translate(-50%);
+    font-size: 14px;
+    list-style: none;
+    text-wrap: wrap;
+    width: 90%;
+    text-align: center;
+}
+#Tabs {
+    position: absolute;
+    top: 5vh;
+    left: 25vw;
+    font-size: 8px;
+    text-align: center;
+    display: none;
+}
+#TabRGB {
+    position: absolute;
+    margin-top: 12vh;
+    color: black;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    width: 70px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#TabCaesar {
+    position: absolute;
+    margin-top: 13.5vh;
+    margin-left: 5.75vw;
+    color: #ffffff;
+    background: black;
+    border: 2px solid #ffffff;
+    width: 70px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
